@@ -24,6 +24,9 @@ namespace com.cwlib.DesignPatterns.Test
                 case "FlyweightMoney":
                     Instance.FlyweightMoney();
                     break;
+                case "FlyweightUserCache":
+                    Instance.FlyweightUserCache();
+                    break;
                 default:
                     Console.WriteLine("Design Pattern " + designPattern + " does not exists");
                     break;
@@ -35,11 +38,9 @@ namespace com.cwlib.DesignPatterns.Test
         {
             FlyweightUserFactory fwuf = new FlyweightUserFactory();
 
-            Guid guid_1 = new Guid();
+            Guid guid_1 = Guid.NewGuid();
             fwuf.GetUser(guid_1); //Getting user 1, also saving in cache
-            fwuf.GetUser(guid_1); //Getting user 1, from cache;
-
-
+            fwuf.GetUser(guid_1); //Getting user 1, from cache;            
         }
 
         private void FlyweightMoney()
