@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Flyweight.FlyweightUserCache
+namespace com.cwlib.DesignPatterns.Flyweight.FlyweightUserCache
 {
     class FlyweightUserFactory
     {
@@ -14,8 +14,12 @@ namespace DesignPatterns.Flyweight.FlyweightUserCache
         public FlyweightUser GetUser(Guid userID)
         {
             if (FlyweightUsers.ContainsKey(userID))
+            {
+                Console.WriteLine("Getting user [" + userID + "] from Cache");
                 return FlyweightUsers[userID];
+            }
 
+            Console.WriteLine("Getting user [" + userID + "] from DB");
             FlyweightUser user = FlyweightUser.GetUser(userID);
             FlyweightUsers.Add(userID, user);
             UsersCount++;

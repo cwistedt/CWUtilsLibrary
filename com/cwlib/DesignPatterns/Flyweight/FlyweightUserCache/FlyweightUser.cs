@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.Flyweight.FlyweightUserCache
+namespace com.cwlib.DesignPatterns.Flyweight.FlyweightUserCache
 {
     class FlyweightUser
     {

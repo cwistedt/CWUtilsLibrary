@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternsExamples.DesignPatterns.FlyWeightMyTest
+namespace com.cwlib.DesignPatterns.Flyweight.FlyweightMoney
 {
-    class MoneyFactory
+    public class MoneyFactory
     {
         public static int ObjectsCount = 0;
         private Dictionary<EnMoneyType, IMoney> _moneyObjects;

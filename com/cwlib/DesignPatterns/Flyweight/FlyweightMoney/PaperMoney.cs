@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPatternsExamples.DesignPatterns.FlyWeightMyTest
+namespace com.cwlib.DesignPatterns.Flyweight.FlyweightMoney
 {
     class PaperMoney : IMoney
     {
