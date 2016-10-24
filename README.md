@@ -7,7 +7,9 @@ Mina DesignPatterns i C#
 
 ## Creational Patterns
 
-Abstract Factory - 
+Abstract Factory
+> Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes.
+>> My Example - ....
 
 Builder - 
 
