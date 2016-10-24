@@ -9,7 +9,29 @@ Mina DesignPatterns i C#
 
 Abstract Factory
 > Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes. Whereas 'Factory Method' pattern abstracts the user from the creation of an object, the 'Abstract Factory' method abstracts the user from the creation of the factory itself.
->> My Example - ....
+>> My Example - 
+AbstractFactory
+  CreatOrder
+  CreateVB_EDI
+  CreateMP_EDI  
+V1_Factory : Abstractfactory 
+  CreateOrder
+  CreateVB_EDI
+  CreateMP_EDI  
+V5_Factory : AbstractFactory
+  CreateOrder
+  CreateVB_EDI
+  CreateMP_EDI
+Order
+  V1_Order : Order
+  V5_Order : Order
+VB_EDI
+  V1_VB_EDI : VB
+  V5_VB_EDI : VB
+MP 
+  V1_MP_EDI : MP
+  V5_MP_EDI : mp
+
 
 Builder - 
 
