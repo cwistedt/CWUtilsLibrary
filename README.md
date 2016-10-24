@@ -34,7 +34,8 @@ Facade -
 Flyweight
 > Pattern - The Flyweight pattern applies to a program using a huge number of objects that have part of their internal state in common where the other part of state can vary. The pattern is used when the larger part of the object can be made extrinsic (external to that object). uses a Factory that can cache and reuse existing class instances.
 
->> My Example - I.E. OrderCache of OrderEdits  that is not closed in OTServer
+>> My Example - Could be used in SendEmail Class when using XslCompiledTransform to transform the email since 
+when you use embedded script(<msxsl:script>) with an XSL file, an assembly that contains Microsoft Intermediate Language (MSIL) is created and loaded into memory. Because of a design limitation in this version of the Microsoft .NET Framework, you cannot unload that assembly from memory. There fore, develop your application in such a way that you load the XSLT once and reuse it as many times as needed. I.E. Flyweight all different emails using XslCompiledTransform with different xsl-files so they are used only once.
 
 Proxy - 
 
