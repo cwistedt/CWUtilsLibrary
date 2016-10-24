@@ -8,7 +8,7 @@ Mina DesignPatterns i C#
 ## Creational Patterns
 
 Abstract Factory
-> Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes.
+> Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes. Whereas 'Factory Method' pattern abstracts the user from the creation of an object, the 'Abstract Factory' method abstracts the user from the creation of the factory itself.
 >> My Example - ....
 
 Builder - 
