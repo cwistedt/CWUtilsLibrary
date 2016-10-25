@@ -45,7 +45,6 @@ VB_EDI
 AbstractFactory aFactory = FactoryMaker.GetFactory(data);
 Order o = aFactory.CreateOrder(data);
 VB vp = aFactory.CreateVB_EDI(data);
-</code>
 ```
 
 Builder - 
