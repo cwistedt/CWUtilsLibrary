@@ -25,10 +25,10 @@ VB_1 : VB - An EDI representing Varubrev reading from v1 data-structure
 VB_5 : VB - An EDI representing Varubrev reading from v5 data-structure
 
 FaktoryMaker
-  GetFactory(data) : AbstractFactory
+  GetFactory : AbstractFactory
 AbstractFactory 
-  CreatOrder(data) - Creates and returns an order
-  CreateVB_EDI(data) - Creates and returns an VB_EDI object
+  CreatOrder - Creates and returns an order
+  CreateVB_EDI - Creates and returns an VB_EDI object
 V1_Factory : Abstractfactory 
   CreateOrder
   CreateVB_EDI
@@ -45,12 +45,12 @@ VB_EDI
 //Usage. Dont know if 1. or 2. is best practice
 
 //1. Pass data parameter with creation of objects
-AbstractFactory aFactory = FactoryMaker.GetFactory(data);
+AbstractFactory aFactory = FactoryMaker.GetFactory(type);
 Order o = aFactory.CreateOrder(data);
 VB vp = aFactory.CreateVB_EDI(data);
 
 //2. Load data after creating the objects
-AbstractFactory aFactory = FactoryMaker.GetFactory(data);
+AbstractFactory aFactory = FactoryMaker.GetFactory(type);
 Order o = aFactory.CreateOrder();
 o.Load(data); 
 VB vp = aFactory.CreateVB_EDI();
