@@ -42,9 +42,20 @@ VB_EDI
   V1_VB_EDI : VB
   V5_VB_EDI : VB
   
+//Usage. Dont know if 1. or 2. is best practice
+
+//1. Pass data parameter with creation of objects
 AbstractFactory aFactory = FactoryMaker.GetFactory(data);
 Order o = aFactory.CreateOrder(data);
 VB vp = aFactory.CreateVB_EDI(data);
+
+//2. Load data after creating the objects
+AbstractFactory aFactory = FactoryMaker.GetFactory(data);
+Order o = aFactory.CreateOrder();
+o.Load(data); 
+VB vp = aFactory.CreateVB_EDI();
+vp.Load(data);
+
 ```
 
 Builder - 
