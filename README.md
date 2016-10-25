@@ -10,36 +10,40 @@ Mina DesignPatterns i C#
 Abstract Factory
 > Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes. Whereas 'Factory Method' pattern abstracts the user from the creation of an object, the 'Abstract Factory' method abstracts the user from the creation of the factory itself.
 >> My Example - In an order-environmen where the structure of data the orders use are different. I call the structures V1 and V5 
+
+<code>
+data - object holding all raw data from datasource
+
 Order - An order containing orderData
 Order_V1 : Order - An order reading data from v1 data-structure
 Order_V5 : Order - An order reading data from v5 data-structure
+
+VB - An EDI representing Varubrev
+VB_1 : VB - An EDI representing Varubrev reading from v1 data-structure
+VB_5 : VB - An EDI representing Varubrev reading from v5 data-structure
+
 FaktoryMaker
-  GetFactory(type) : AbstractFactory
-AbstractFactory
-  CreatOrder() - Creates and returns an order
-  CreateVB_EDI() - Creates and returns an VB_EDI object
-  CreateMP_EDI() - Createa and returns an MP_EDI object 
+  GetFactory(data) : AbstractFactory
+AbstractFactory 
+  CreatOrder(data) - Creates and returns an order
+  CreateVB_EDI(data) - Creates and returns an VB_EDI object
 V1_Factory : Abstractfactory 
   CreateOrder
   CreateVB_EDI
-  CreateMP_EDI  
 V5_Factory : AbstractFactory
   CreateOrder
   CreateVB_EDI
-  CreateMP_EDI
 Order
   V1_Order : Order
   V5_Order : Order
 VB_EDI
   V1_VB_EDI : VB
   V5_VB_EDI : VB
-MP 
-  V1_MP_EDI : MP
-  V5_MP_EDI : mp
-
-AbstractFactory aFactory = FactoryMaker.GetFactory(dataSource);
-Order o = aFactory.CreateOrder(dataSource);
-
+  
+AbstractFactory aFactory = FactoryMaker.GetFactory(data);
+Order o = aFactory.CreateOrder(data);
+VB vp = aFactory.CreateVB_EDI(data);
+</code>
 
 Builder - 
 
