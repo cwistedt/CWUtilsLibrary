@@ -7,17 +7,81 @@ Mina DesignPatterns i C#
 
 ## Creational Patterns
 
-Abstract Factory
-> Pattern - The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes.
->> My Example - ....
+### Abstract Factory
+#### Pattern
+The Purpose of Abstract Factory is to provide an interface for creating families of related objects, without specifying concrete classes. Whereas 'Factory Method' pattern abstracts the user from the creation of an object, the 'Abstract Factory' method abstracts the user from the creation of the factory itself.
 
-Builder - 
+#### My Example
+In an order-environmen where the structure of data the orders use are different. I call the structures V1 and V5 
+```
+data - object holding all raw data from datasource
 
-Factory Method -
+Order - An order containing orderData
+Order_V1 : Order - An order reading data from v1 data-structure
+Order_V5 : Order - An order reading data from v5 data-structure
 
-Prototype - 
+VB - An EDI representing Varubrev
+VB_1 : VB - An EDI representing Varubrev reading from v1 data-structure
+VB_5 : VB - An EDI representing Varubrev reading from v5 data-structure
 
-Singleton - 
+FaktoryMaker
+  GetFactory : AbstractFactory
+AbstractFactory 
+  CreatOrder - Creates and returns an order
+  CreateVB_EDI - Creates and returns an VB_EDI object
+V1_Factory : Abstractfactory 
+  CreateOrder
+  CreateVB_EDI
+V5_Factory : AbstractFactory
+  CreateOrder
+  CreateVB_EDI
+Order
+  V1_Order : Order
+  V5_Order : Order
+VB_EDI
+  V1_VB_EDI : VB
+  V5_VB_EDI : VB
+  
+//Usage. Dont know if 1. or 2. is best practice
+
+//1. Pass data parameter with creation of objects
+AbstractFactory aFactory = FactoryMaker.GetFactory(type | data);
+Order o = aFactory.CreateOrder(data);
+VB vp = aFactory.CreateVB_EDI(data);
+
+//2. Load data after creating the objects
+AbstractFactory aFactory = FactoryMaker.GetFactory(type | data);
+Order o = aFactory.CreateOrder();
+o.Load(data); 
+VB vp = aFactory.CreateVB_EDI();
+vp.Load(data);
+
+```
+
+### Builder
+
+#### Pattern
+
+#### My Example
+
+### Factory Method
+
+#### Pattern
+
+#### My Example
+
+### Prototype 
+
+#### Pattern
+
+#### My Example
+
+### Singleton 
+
+#### Pattern
+
+#### My Example
+
 
 
 
