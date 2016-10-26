@@ -64,11 +64,24 @@ vp.Load(data);
 
 #### My Example
 
-Factory Method -
+### Factory Method
 
-Prototype - 
+#### Pattern
 
-Singleton - 
+#### My Example
+
+### Prototype 
+
+#### Pattern
+
+#### My Example
+
+### Singleton 
+
+#### Pattern
+
+#### My Example
+
 
 
 
