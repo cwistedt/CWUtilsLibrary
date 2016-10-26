@@ -12,6 +12,8 @@ using com.cwlib.DesignPatterns.Flyweight.FlyweightMoney;
 using com.cwlib.DesignPatterns.Flyweight.FlyweightUserCache;
 using com.cwlib.DesignPatterns.AbstractFactory.AbstractFactoryDatabase;
 using com.cwlib.DesignPatterns.AbstractFactory.AbstractFactoryReport;
+using com.cwlib.DesignPatterns.Builder.BuilderDatabase;
+using com.cwlib.DesignPatterns.Builder.BuilderCar;
 
 namespace com.cwlib.DesignPatterns.Test
 {
@@ -39,11 +41,47 @@ namespace com.cwlib.DesignPatterns.Test
                 case "AbstractFactoryReports":
                     Instance.AbstractFactoryReport();
                     break;
+                case "BuilderDatabase":
+                    Instance.BuilderDatabase("SQL");
+                    Instance.BuilderDatabase("OLEDB");
+                    break;
+                case "BuilderCar":
+                    Instance.BuilderCar();
+                    break;
                 default:
                     Console.WriteLine("Design Pattern " + designPattern + " does not exists");
                     break;
             }
 
+        }
+
+        private void BuilderCar()
+        {
+            CarBuilderDirector carBuilderDirector = new CarBuilderDirector();
+            Car car = carBuilderDirector.Construct();
+            Console.WriteLine(car);
+        }
+
+        private void BuilderDatabase(string type)
+        {
+            Director director = new Director();
+            IDatabaseBuilder builder;
+
+            if (type == "SQL")
+            {
+                Console.WriteLine("Building SQL");
+                builder = new SqlServerDatabaseBuilder();
+            }
+            else
+            {
+                Console.WriteLine("Building OLEDB");
+                builder = new OleDbDatabaseBuilder();
+            }
+            
+            director.Build(builder);
+            Builder.BuilderDatabase.Database database = builder.Database;
+
+            DbCommand command = database.Command;            
         }
 
         private void FlyweightUserCache()
@@ -85,16 +123,16 @@ namespace com.cwlib.DesignPatterns.Test
 
         private void AbstractFactoryDatabase(string type)
         {
-            Database database;
+            AbstractFactory.AbstractFactoryDatabase.Database database;
             if (type == "SQL")
             {
                 Console.WriteLine("Creating SqlServerDatabase");
-                database = new SqlServerDatabase();
+                database = new AbstractFactory.AbstractFactoryDatabase.SqlServerDatabase();
             }
             else
             {
                 Console.WriteLine("Creating OleDBDatabase");
-                database = new OleDBDatabase();
+                database = new AbstractFactory.AbstractFactoryDatabase.OleDBDatabase();
             }
 
             //The Abstract Factory
