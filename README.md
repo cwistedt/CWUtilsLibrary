@@ -165,6 +165,7 @@ Composite - ****** Tree
 ## Namespaces
 
 ### Description
+To avoid name collisions, and to facilitate name recognition, bind elements to a prefix.
 
 ### My Description
 
