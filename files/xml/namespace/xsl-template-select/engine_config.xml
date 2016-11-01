@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="com.unifaun.orderengine.config.userdata" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xmlns:ufb="http://www.unifaun.com/ufo/bean">
+  <Logins>
+    <Object xsi:type="WebOrderLoginConfig">
+      <Login>
+        <System>PSONLINE2</System>
+      </Login>
+      <Printers>
+        <Enabled>false</Enabled>
+        <PrinterMap xsi:type="n1:HashMap" xmlns:n1="java.util">
+          <ObjectEntry>
+            <Key xsi:type="n2:String" xmlns:n2="java.lang">ULLA</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n3:String" xmlns:n3="java.lang">ULLA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n4:String" xmlns:n4="java.lang">ULRIKA</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n5:String" xmlns:n5="java.lang">ULRIKA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n6:String" xmlns:n6="java.lang">URSULA</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n7:String" xmlns:n7="java.lang">URSULA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n8:String" xmlns:n8="java.lang">UMA</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n9:String" xmlns:n9="java.lang">UMA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n10:String" xmlns:n10="java.lang">UNNI</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n11:String" xmlns:n11="java.lang">UNNI</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n12:String" xmlns:n12="java.lang">UFFE</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n13:String" xmlns:n13="java.lang">UFFE</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n14:String" xmlns:n14="java.lang">URAX</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n15:String" xmlns:n15="java.lang">URAX</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n16:String" xmlns:n16="java.lang">URBAN</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n17:String" xmlns:n17="java.lang">URBAN</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n18:String" xmlns:n18="java.lang">UNO</Key>
+            <Value xsi:type="n1:HashSet">
+              <Object xsi:type="n19:String" xmlns:n19="java.lang">UNO</Object>
+            </Value>
+          </ObjectEntry>
+        </PrinterMap>
+        <Printers xsi:type="n20:ArrayList" xmlns:n20="java.util">
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>laser-2x104x250</Media>
+            <Name>Etikettskrivare</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap" />
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <Service />
+            <ServiceMode>DEFAULT</ServiceMode>
+            <WizardId>1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>1</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>laser-a4</Media>
+            <Name>Övriga dokument</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap" />
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <Service />
+            <ServiceMode>DEFAULT</ServiceMode>
+            <WizardId>0</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>URAX</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n21:String" xmlns:n21="java.lang">rotate</Key>
+                  <Value xsi:type="n22:String" xmlns:n22="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n23:String" xmlns:n23="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n24:String" xmlns:n24="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n25:String" xmlns:n25="java.lang">dpi</Key>
+                  <Value xsi:type="n26:String" xmlns:n26="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n27:String" xmlns:n27="java.lang">storage</Key>
+                  <Value xsi:type="n28:String" xmlns:n28="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n29:String" xmlns:n29="java.lang">mode</Key>
+                  <Value xsi:type="n30:String" xmlns:n30="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URAX</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>ULLA</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n31:String" xmlns:n31="java.lang">rotate</Key>
+                  <Value xsi:type="n32:String" xmlns:n32="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n33:String" xmlns:n33="java.lang">dpi</Key>
+                  <Value xsi:type="n34:String" xmlns:n34="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n35:String" xmlns:n35="java.lang">mode</Key>
+                  <Value xsi:type="n36:String" xmlns:n36="java.lang">DT</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n37:String" xmlns:n37="java.lang">storage</Key>
+                  <Value xsi:type="n38:String" xmlns:n38="java.lang">NONE</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL ULLA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>URSULA</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n39:String" xmlns:n39="java.lang">rotate</Key>
+                  <Value xsi:type="n40:String" xmlns:n40="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n41:String" xmlns:n41="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n42:String" xmlns:n42="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n43:String" xmlns:n43="java.lang">dpi</Key>
+                  <Value xsi:type="n44:String" xmlns:n44="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n45:String" xmlns:n45="java.lang">storage</Key>
+                  <Value xsi:type="n46:String" xmlns:n46="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n47:String" xmlns:n47="java.lang">mode</Key>
+                  <Value xsi:type="n48:String" xmlns:n48="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URSULA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>URBAN</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n49:String" xmlns:n49="java.lang">rotate</Key>
+                  <Value xsi:type="n50:String" xmlns:n50="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n51:String" xmlns:n51="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n52:String" xmlns:n52="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n53:String" xmlns:n53="java.lang">dpi</Key>
+                  <Value xsi:type="n54:String" xmlns:n54="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n55:String" xmlns:n55="java.lang">mode</Key>
+                  <Value xsi:type="n56:String" xmlns:n56="java.lang">DT</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n57:String" xmlns:n57="java.lang">storage</Key>
+                  <Value xsi:type="n58:String" xmlns:n58="java.lang">NONE</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URBAN</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>ULRIKA</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n59:String" xmlns:n59="java.lang">rotate</Key>
+                  <Value xsi:type="n60:String" xmlns:n60="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n61:String" xmlns:n61="java.lang">dpi</Key>
+                  <Value xsi:type="n62:String" xmlns:n62="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n63:String" xmlns:n63="java.lang">mode</Key>
+                  <Value xsi:type="n64:String" xmlns:n64="java.lang">DT</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n65:String" xmlns:n65="java.lang">storage</Key>
+                  <Value xsi:type="n66:String" xmlns:n66="java.lang">NONE</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL ULRIKA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UFFE</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n67:String" xmlns:n67="java.lang">rotate</Key>
+                  <Value xsi:type="n68:String" xmlns:n68="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n69:String" xmlns:n69="java.lang">dpi</Key>
+                  <Value xsi:type="n70:String" xmlns:n70="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n71:String" xmlns:n71="java.lang">mode</Key>
+                  <Value xsi:type="n72:String" xmlns:n72="java.lang">DT</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n73:String" xmlns:n73="java.lang">storage</Key>
+                  <Value xsi:type="n74:String" xmlns:n74="java.lang">NONE</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UFFE</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UNNI</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n75:String" xmlns:n75="java.lang">rotate</Key>
+                  <Value xsi:type="n76:String" xmlns:n76="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n77:String" xmlns:n77="java.lang">dpi</Key>
+                  <Value xsi:type="n78:String" xmlns:n78="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n79:String" xmlns:n79="java.lang">mode</Key>
+                  <Value xsi:type="n80:String" xmlns:n80="java.lang">DT</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n81:String" xmlns:n81="java.lang">storage</Key>
+                  <Value xsi:type="n82:String" xmlns:n82="java.lang">NONE</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UNNI</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>UMA</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n83:String" xmlns:n83="java.lang">rotate</Key>
+                  <Value xsi:type="n84:String" xmlns:n84="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n85:String" xmlns:n85="java.lang">dpi</Key>
+                  <Value xsi:type="n86:String" xmlns:n86="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n87:String" xmlns:n87="java.lang">storage</Key>
+                  <Value xsi:type="n88:String" xmlns:n88="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n89:String" xmlns:n89="java.lang">mode</Key>
+                  <Value xsi:type="n90:String" xmlns:n90="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UMA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UNO</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n91:String" xmlns:n91="java.lang">rotate</Key>
+                  <Value xsi:type="n92:String" xmlns:n92="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n93:String" xmlns:n93="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n94:String" xmlns:n94="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n95:String" xmlns:n95="java.lang">dpi</Key>
+                  <Value xsi:type="n96:String" xmlns:n96="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n97:String" xmlns:n97="java.lang">storage</Key>
+                  <Value xsi:type="n98:String" xmlns:n98="java.lang">RAM</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n99:String" xmlns:n99="java.lang">mode</Key>
+                  <Value xsi:type="n100:String" xmlns:n100="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZDesigner GK420d (EPL) UNO</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n20:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UWE</Name>
+            <Parameters>
+              <Params xsi:type="n20:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n101:String" xmlns:n101="java.lang">rotate</Key>
+                  <Value xsi:type="n102:String" xmlns:n102="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n103:String" xmlns:n103="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n104:String" xmlns:n104="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n105:String" xmlns:n105="java.lang">dpi</Key>
+                  <Value xsi:type="n106:String" xmlns:n106="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n107:String" xmlns:n107="java.lang">storage</Key>
+                  <Value xsi:type="n108:String" xmlns:n108="java.lang">FLASH</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n109:String" xmlns:n109="java.lang">mode</Key>
+                  <Value ufb:isNull="true" />
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UWE</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+        </Printers>
+      </Printers>
+    </Object>
+    <Object xsi:type="WebOrderLoginConfig">
+      <Login>
+        <System>UFONLINE2</System>
+      </Login>
+      <Printers>
+        <Enabled>false</Enabled>
+        <PrinterMap xsi:type="n110:HashMap" xmlns:n110="java.util">
+          <ObjectEntry>
+            <Key xsi:type="n111:String" xmlns:n111="java.lang">ULLA</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n112:String" xmlns:n112="java.lang">ULLA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n113:String" xmlns:n113="java.lang">ULRIKA</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n114:String" xmlns:n114="java.lang">ULRIKA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n115:String" xmlns:n115="java.lang">URSULA</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n116:String" xmlns:n116="java.lang">URSULA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n117:String" xmlns:n117="java.lang">UMA</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n118:String" xmlns:n118="java.lang">UMA</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n119:String" xmlns:n119="java.lang">UWE</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n120:String" xmlns:n120="java.lang">UWE</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n121:String" xmlns:n121="java.lang">UFFE</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n122:String" xmlns:n122="java.lang">UFFE</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n123:String" xmlns:n123="java.lang">UNNI</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n124:String" xmlns:n124="java.lang">UNNI</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n125:String" xmlns:n125="java.lang">URAX</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n126:String" xmlns:n126="java.lang">URAX</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n127:String" xmlns:n127="java.lang">UNO</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n128:String" xmlns:n128="java.lang">UNO</Object>
+            </Value>
+          </ObjectEntry>
+          <ObjectEntry>
+            <Key xsi:type="n129:String" xmlns:n129="java.lang">URBAN</Key>
+            <Value xsi:type="n110:HashSet">
+              <Object xsi:type="n130:String" xmlns:n130="java.lang">URBAN</Object>
+            </Value>
+          </ObjectEntry>
+        </PrinterMap>
+        <Printers xsi:type="n131:ArrayList" xmlns:n131="java.util">
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>URSULA</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n132:String" xmlns:n132="java.lang">rotate</Key>
+                  <Value xsi:type="n133:String" xmlns:n133="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n134:String" xmlns:n134="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n135:String" xmlns:n135="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n136:String" xmlns:n136="java.lang">dpi</Key>
+                  <Value xsi:type="n137:String" xmlns:n137="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n138:String" xmlns:n138="java.lang">storage</Key>
+                  <Value xsi:type="n139:String" xmlns:n139="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n140:String" xmlns:n140="java.lang">mode</Key>
+                  <Value xsi:type="n141:String" xmlns:n141="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URSULA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>laser-2x104x250</Media>
+            <Name>Etikettskrivare</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap" />
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <Service />
+            <ServiceMode>DEFAULT</ServiceMode>
+            <WizardId>1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardLaser</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>1</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>laser-a4</Media>
+            <Name>Övriga dokument</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap" />
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <Service />
+            <ServiceMode>DEFAULT</ServiceMode>
+            <WizardId>0</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>UMA</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n142:String" xmlns:n142="java.lang">rotate</Key>
+                  <Value xsi:type="n143:String" xmlns:n143="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n144:String" xmlns:n144="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n145:String" xmlns:n145="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n146:String" xmlns:n146="java.lang">dpi</Key>
+                  <Value xsi:type="n147:String" xmlns:n147="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n148:String" xmlns:n148="java.lang">storage</Key>
+                  <Value xsi:type="n149:String" xmlns:n149="java.lang">RAM</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n150:String" xmlns:n150="java.lang">mode</Key>
+                  <Value xsi:type="n151:String" xmlns:n151="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UMA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>UWE</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n152:String" xmlns:n152="java.lang">rotate</Key>
+                  <Value xsi:type="n153:String" xmlns:n153="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n154:String" xmlns:n154="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n155:String" xmlns:n155="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n156:String" xmlns:n156="java.lang">dpi</Key>
+                  <Value xsi:type="n157:String" xmlns:n157="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n158:String" xmlns:n158="java.lang">storage</Key>
+                  <Value xsi:type="n159:String" xmlns:n159="java.lang">RAM</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n160:String" xmlns:n160="java.lang">mode</Key>
+                  <Value xsi:type="n161:String" xmlns:n161="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UWE</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>URAX</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n162:String" xmlns:n162="java.lang">rotate</Key>
+                  <Value xsi:type="n163:String" xmlns:n163="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n164:String" xmlns:n164="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n165:String" xmlns:n165="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n166:String" xmlns:n166="java.lang">dpi</Key>
+                  <Value xsi:type="n167:String" xmlns:n167="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n168:String" xmlns:n168="java.lang">storage</Key>
+                  <Value xsi:type="n169:String" xmlns:n169="java.lang">FLASH</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n170:String" xmlns:n170="java.lang">mode</Key>
+                  <Value xsi:type="n171:String" xmlns:n171="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URAX</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>ULLA</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n172:String" xmlns:n172="java.lang">rotate</Key>
+                  <Value xsi:type="n173:String" xmlns:n173="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n174:String" xmlns:n174="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n175:String" xmlns:n175="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n176:String" xmlns:n176="java.lang">dpi</Key>
+                  <Value xsi:type="n177:String" xmlns:n177="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n178:String" xmlns:n178="java.lang">storage</Key>
+                  <Value xsi:type="n179:String" xmlns:n179="java.lang">FLASH</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n180:String" xmlns:n180="java.lang">mode</Key>
+                  <Value ufb:isNull="true" />
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL ULLA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>URBAN</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n181:String" xmlns:n181="java.lang">rotate</Key>
+                  <Value xsi:type="n182:String" xmlns:n182="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n183:String" xmlns:n183="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n184:String" xmlns:n184="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n185:String" xmlns:n185="java.lang">dpi</Key>
+                  <Value xsi:type="n186:String" xmlns:n186="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n187:String" xmlns:n187="java.lang">storage</Key>
+                  <Value xsi:type="n188:String" xmlns:n188="java.lang">FLASH</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n189:String" xmlns:n189="java.lang">mode</Key>
+                  <Value ufb:isNull="true" />
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL URBAN</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>ULRIKA</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n190:String" xmlns:n190="java.lang">rotate</Key>
+                  <Value xsi:type="n191:String" xmlns:n191="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n192:String" xmlns:n192="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n193:String" xmlns:n193="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n194:String" xmlns:n194="java.lang">dpi</Key>
+                  <Value xsi:type="n195:String" xmlns:n195="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n196:String" xmlns:n196="java.lang">storage</Key>
+                  <Value xsi:type="n197:String" xmlns:n197="java.lang">RAM</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n198:String" xmlns:n198="java.lang">mode</Key>
+                  <Value xsi:type="n199:String" xmlns:n199="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL ULRIKA</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UFFE</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n200:String" xmlns:n200="java.lang">rotate</Key>
+                  <Value xsi:type="n201:String" xmlns:n201="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n202:String" xmlns:n202="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n203:String" xmlns:n203="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n204:String" xmlns:n204="java.lang">dpi</Key>
+                  <Value xsi:type="n205:String" xmlns:n205="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n206:String" xmlns:n206="java.lang">mode</Key>
+                  <Value ufb:isNull="true" />
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n207:String" xmlns:n207="java.lang">storage</Key>
+                  <Value xsi:type="n208:String" xmlns:n208="java.lang">FLASH</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UFFE</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>Zebra</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-250</Media>
+            <Name>UNNI</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n209:String" xmlns:n209="java.lang">rotate</Key>
+                  <Value xsi:type="n210:String" xmlns:n210="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n211:String" xmlns:n211="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n212:String" xmlns:n212="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n213:String" xmlns:n213="java.lang">dpi</Key>
+                  <Value xsi:type="n214:String" xmlns:n214="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n215:String" xmlns:n215="java.lang">storage</Key>
+                  <Value xsi:type="n216:String" xmlns:n216="java.lang">RAM</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n217:String" xmlns:n217="java.lang">mode</Key>
+                  <Value xsi:type="n218:String" xmlns:n218="java.lang">DT</Value>
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZEBRA GK420d EPL UNNI</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+          <Object xsi:type="PrintPrinterConfig">
+            <AllowAskForMissingService>false</AllowAskForMissingService>
+            <Driver>StandardThermo</Driver>
+            <FixedSelection>false</FixedSelection>
+            <Id>0</Id>
+            <LayoutFilter xsi:type="n131:HashSet" />
+            <MaxPagesPerDocument>0</MaxPagesPerDocument>
+            <Media>thermo-72</Media>
+            <Name>UNO</Name>
+            <Parameters>
+              <Params xsi:type="n131:HashMap">
+                <ObjectEntry>
+                  <Key xsi:type="n219:String" xmlns:n219="java.lang">rotate</Key>
+                  <Value xsi:type="n220:String" xmlns:n220="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n221:String" xmlns:n221="java.lang">pdfrotate</Key>
+                  <Value xsi:type="n222:String" xmlns:n222="java.lang">NONE</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n223:String" xmlns:n223="java.lang">dpi</Key>
+                  <Value xsi:type="n224:String" xmlns:n224="java.lang">203</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n225:String" xmlns:n225="java.lang">storage</Key>
+                  <Value xsi:type="n226:String" xmlns:n226="java.lang">FLASH</Value>
+                </ObjectEntry>
+                <ObjectEntry>
+                  <Key xsi:type="n227:String" xmlns:n227="java.lang">mode</Key>
+                  <Value ufb:isNull="true" />
+                </ObjectEntry>
+              </Params>
+            </Parameters>
+            <PauseBeforePrint>false</PauseBeforePrint>
+            <PdfInsertFolder></PdfInsertFolder>
+            <Service>
+              <Color>monochrome</Color>
+              <MediaTray>manual</MediaTray>
+              <Name>ZDesigner GK420d (EPL) UNO</Name>
+              <Orientation>portrait</Orientation>
+              <Resolution>203x203</Resolution>
+            </Service>
+            <ServiceMode>SELECTED</ServiceMode>
+            <WizardId>-1</WizardId>
+            <XOffset>0.0</XOffset>
+            <YOffset>0.0</YOffset>
+          </Object>
+        </Printers>
+      </Printers>
+    </Object>
+  </Logins>
+</Document>
