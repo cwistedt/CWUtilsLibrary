@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using System.Data.Common;
+using System.Data;
 
 using com.cwlib.DesignPatterns.Flyweight.FlyweightMoney;
 using com.cwlib.DesignPatterns.Flyweight.FlyweightUserCache;
@@ -14,6 +15,9 @@ using com.cwlib.DesignPatterns.AbstractFactory.AbstractFactoryDatabase;
 using com.cwlib.DesignPatterns.AbstractFactory.AbstractFactoryReport;
 using com.cwlib.DesignPatterns.Builder.BuilderDatabase;
 using com.cwlib.DesignPatterns.Builder.BuilderCar;
+using com.cwlib.DesignPatterns.FactoryMethod.FactoryMethodDatabase;
+using com.cwlib.DesignPatterns.FactoryMethod.FactoryMethodPlan;
+
 
 namespace com.cwlib.DesignPatterns.Test
 {
@@ -28,6 +32,13 @@ namespace com.cwlib.DesignPatterns.Test
 
             switch (designPattern)
             {
+                case "FactoryMethodPlan":
+                    Instance.FactoryMethodPlan();
+                    break;
+                case "FactoryMethodDB":
+                    Instance.FactoryMethodDB("SQL");
+                    Instance.FactoryMethodDB("OLEDB");
+                    break;
                 case "FlyweightMoney":
                     Instance.FlyweightMoney();
                     break;
@@ -53,6 +64,49 @@ namespace com.cwlib.DesignPatterns.Test
                     break;
             }
 
+        }
+
+        private void FactoryMethodPlan()
+        {
+            GetPlanFactory planFactory = new GetPlanFactory();
+
+            Plan domesticPlan = planFactory.getPlan("DOMESTICPLAN");
+            domesticPlan.getRate();
+            Console.WriteLine("Bill amount for DOMESTICPLAN of  5 units is: ");
+            domesticPlan.calculateBill(5);
+
+
+            Plan commercialPlan = planFactory.getPlan("COMMERCIALPLAN");
+            commercialPlan.getRate();
+            Console.WriteLine("Bill amount for COMMERCIALPLAN of  5 units is: ");
+            commercialPlan.calculateBill(5);
+
+            Plan institutionalPlan = planFactory.getPlan("INSTITUTIONALPLAN");
+            institutionalPlan.getRate();
+            Console.WriteLine("Bill amount for INSTITUTIONALPLAN of  5 units is: ");
+            institutionalPlan.calculateBill(5);
+        }
+
+
+        private void FactoryMethodDB(string type)
+        {
+            FactoryMethod.FactoryMethodDatabase.IDatabase database;
+            FactoryMethod.FactoryMethodDatabase.DatabaseType databaseType;
+            if (type == "OLEDB")
+            {
+                Console.WriteLine("Creating SqlServerDatabase");
+                databaseType = FactoryMethod.FactoryMethodDatabase.DatabaseType.OleDb;
+            }
+            else
+            {
+                Console.WriteLine("Creating OleDBServerDatabase");
+                databaseType = FactoryMethod.FactoryMethodDatabase.DatabaseType.OleDb;
+            }
+
+            //The FactoryMetod
+            database = FactoryMethod.FactoryMethodDatabase.DatabaseFactory.CreateDatabase(databaseType);
+
+            IDbCommand command = database.Command;
         }
 
         private void BuilderCar()
