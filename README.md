@@ -73,8 +73,7 @@ runtime.
 Usefull when:
 -A class cant anticipate the type of product to create
 	If you do alot of:			
-	```
-	
+	```	
 	if (genericProduct typeof ConcreteProduct)
 			((ConcreteProduct)genericProduct).doSomeConcreteOperation();	
 	```
