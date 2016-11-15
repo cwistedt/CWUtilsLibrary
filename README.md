@@ -65,10 +65,110 @@ vp.Load(data);
 #### My Example
 
 ### Factory Method
-
 #### Pattern
 
 #### My Example
+The Factory Method (Also Known as Virtual Constructor) defines an interface for creating
+an object, but leaves the choice of its type to the subclasses, creation beeing deferred at
+runtime.
+
+Usefull when:
+-A class cant anticipate the type of product to create
+	If you do alot of:			
+	´´´	if (genericProduct typeof ConcreteProduct)
+			((ConcreteProduct)genericProduct).doSomeConcreteOperation();	
+	´´´
+  
+Plus/Minus
++Customization Hooks
++Weak Copuling
+-Objects have to extend common base class or interface to be used in the factory
+
+//The Creator (also called Factory because it creates the objects)
+abstract ComputerCreator
+{
+	//Factory Method (because it is responsible with 'making' an object)
+	makeComputer() : IComputer {		
+	}
+	//Can have default implementation that can be redifined in subclasses
+	//Often then Creator is a concrete class
+	//"Create objects in a separate operation so that subclasses can override the way they're created"
+	makeComputer(string type) : IComputer {
+		if(type == "local")
+			return LocalComputer();
+		if(type == "rpc")
+			return RPCComputer();
+	}
+}
+
+//The Concrete Creator, overrides the factory method
+LocalComputerCreator : ComputerCreator {
+	makeComputer() : IComputer {
+		return new LocalComputer();
+	}
+
+	//Factory Method extending parameterized Factory Method 
+	makeComputer(string type) {
+		if(type == "local")
+			return new LocalComputer();
+
+		return parent.makeComputer(type);
+	} 
+}
+
+//The Concrete Creator, overrides the factory method
+RPCComputerCreator : ComputerCreator {}
+	makeComputer() : IComputer {
+		return new RPCComputer();
+	} 
+
+	//Factory Method extending parameterized Factory Method
+	makeComputer(string type) {
+		if(type == "rpc")
+			return new RPCComputer();
+
+		return parent.makeComputer(string type);
+	}
+}
+
+//The Product, the interface for objects the Factory Method creates
+IComputer {
+	getDisks() : List<Disk>
+}
+
+//The Concrete Product, implements the Product interface
+LocalComputer : IComputer {
+	getDisks() : List<Disk> {
+		//get local disk, loop through and return as List
+	}
+}
+
+//The Concrete Product, implements the Product interface
+RPCComputer : IComputer {
+	getDisks() : List<Disk> {
+		//get rpc disk, loop through and return as List
+	}	 
+}
+
+Program {
+	
+	main() {
+
+		RPCComputerCreator rpcCDC = new RPCComputerCreator();
+		IComputer rpcComputer = rpcCDC.getComputer();
+
+		ComputerCreator cc = new ComputerCreator();
+		//Parameterized Factory Method
+		IComputer rpcComputer = cc.getComputer('rpc');		
+
+		LocalComputerDiskCreator lcDC = new LocalComputerDiskCreator();
+		//Overrided Parameterized Factory Method
+		IComputer lComputer = lcDC.getComputer('local');
+
+	}
+
+}
+
 
 ### Prototype 
 
