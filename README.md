@@ -71,18 +71,19 @@ an object, but leaves the choice of its type to the subclasses, creation beeing 
 runtime.
 
 Usefull when:
--A class cant anticipate the type of product to create
+* -A class cant anticipate the type of product to create
 	If you do alot of:			
 	```	
-	if (genericProduct typeof ConcreteProduct)
+	if (genericProduct typeof ConcreteProduct) {	
 			((ConcreteProduct)genericProduct).doSomeConcreteOperation();	
+	}
 	```
 
   
 Plus/Minus
-+Customization Hooks
-+Weak Copuling
--Objects have to extend common base class or interface to be used in the factory
+* +Customization Hooks
+* +Weak Copuling
+* -Objects have to extend common base class or interface to be used in the factory
 
 #### My Example
 ```
