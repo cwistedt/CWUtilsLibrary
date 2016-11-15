@@ -66,8 +66,6 @@ vp.Load(data);
 
 ### Factory Method
 #### Pattern
-
-#### My Example
 The Factory Method (Also Known as Virtual Constructor) defines an interface for creating
 an object, but leaves the choice of its type to the subclasses, creation beeing deferred at
 runtime.
@@ -75,15 +73,20 @@ runtime.
 Usefull when:
 -A class cant anticipate the type of product to create
 	If you do alot of:			
-	´´´	if (genericProduct typeof ConcreteProduct)
+	```
+	
+	if (genericProduct typeof ConcreteProduct)
 			((ConcreteProduct)genericProduct).doSomeConcreteOperation();	
-	´´´
+	```
+
   
 Plus/Minus
 +Customization Hooks
 +Weak Copuling
 -Objects have to extend common base class or interface to be used in the factory
 
+#### My Example
+```
 //The Creator (also called Factory because it creates the objects)
 abstract ComputerCreator
 {
@@ -168,7 +171,7 @@ Program {
 	}
 
 }
-
+```
 
 ### Prototype 
 
