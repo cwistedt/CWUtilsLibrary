@@ -174,11 +174,26 @@ Program {
 ```
 
 ### Factory With Registration
+
 #### Pattern
 Factory pattern is base for two very popular GOF creational patterns, namely Factory Method and Abstract Factory. It facilitates:
 *Creating objects without exposing the instantiation logic to client.
 *Referring to the newly created objects through a common interface.
+*Having only one Factory and removes need to have an abstraction for the Factory
+*Uses a parameterized factory method and self-registering/autoregistering products of that factory 
 #### My Example
+Auto & Self Regestering Products w/o Reflection
+EDIFactory
+	RegisterRoom
+
+IEDI
+	
+VBEDI : IEDI
+
+MPEDI : IEDI
+
+
+
 
 ### Prototype 
 
