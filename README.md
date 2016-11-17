@@ -183,14 +183,60 @@ Factory pattern is base for two very popular GOF creational patterns, namely Fac
 *Uses a parameterized factory method and self-registering/autoregistering products of that factory 
 #### My Example
 Auto & Self Regestering Products w/o Reflection
-EDIFactory
-	RegisterRoom
 
-IEDI
+EDIFactory {
+
+	Dictionary<EDITYPES, IEDI> edis = new Dictionary<EDITYPES, IEDI>();
+
+	static GetInstance() {
 	
-VBEDI : IEDI
+	}
 
-MPEDI : IEDI
+	static EDIFactory() {
+		GetInstance().Initalize();
+	}
+	
+	Initialize() {
+		Assembly ass = Assembly.GetExecutingAssembly();		
+		Type[] types = ass.GetType();
+		foreach(Type type in types) {
+			if(type.IsClass && !type.IsInterface) {
+				Type iEDIType = type.GetInterface("IEDI");
+				if(iEDIType != null) {
+					EDITYPES ediType = (EDITYPES)type.GetProperty("key", BindingFlags.Static | BindingFlags.Public).GetValue(null,null);
+					if(ediType != null) {
+						edis.add(ediType, Activator.CreateInstance(type));
+					}					
+				}
+			}
+		}
+	}
+	
+	GetEDI(EDITYPE ediType) : IEDI {
+		edis[ediType].CreateEDI();
+	}
+}
+
+public ENUM EDITYPES { VB, MP }
+
+IEDI {
+	EDITYPES static Key { get; }
+	IEDI CreateEDI();
+}
+
+VBEDI : IEDI {
+	Key = EDITYPE.VB;
+	IEDI CreateEDI() {
+		return new VBEDI();
+	}
+}
+
+MPEDI : IEDI {
+	Key = EDITYPE.MP;
+	IEDI CreateEDI() {
+		return new MPEDI();
+	}
+}
 
 
 
