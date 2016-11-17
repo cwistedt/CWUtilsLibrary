@@ -17,7 +17,8 @@ using com.cwlib.DesignPatterns.Builder.BuilderDatabase;
 using com.cwlib.DesignPatterns.Builder.BuilderCar;
 using com.cwlib.DesignPatterns.FactoryMethod.FactoryMethodDatabase;
 using com.cwlib.DesignPatterns.FactoryMethod.FactoryMethodPlan;
-
+using com.cwlib.DesignPatterns.Factory.RegistrationTest;
+using com.cwlib.DesignPatterns.Factory.AutoRegistrationTest;
 
 namespace com.cwlib.DesignPatterns.Test
 {
@@ -32,6 +33,12 @@ namespace com.cwlib.DesignPatterns.Test
 
             switch (designPattern)
             {
+                case "AutoSelfRegistrationFactory":
+                    Instance.AutoSelfRegistrationFactory();
+                    break;
+                case "RegistrationFactory":
+                    Instance.RegistrationFactory();
+                    break;
                 case "FactoryMethodPlan":
                     Instance.FactoryMethodPlan();
                     break;
@@ -64,6 +71,18 @@ namespace com.cwlib.DesignPatterns.Test
                     break;
             }
 
+        }
+        
+        private void AutoSelfRegistrationFactory()
+        {
+            IEDI EDIVB = EDIFactory.Instance.GetEDI(EDITYPES.VB);
+            IEDI EDIMP = EDIFactory.Instance.GetEDI(EDITYPES.MP);
+        }
+
+        private void RegistrationFactory()
+        {
+            OneProduct.Touch();
+            Product product = ProductFactory.Instance().CreateProduct("OneProduct");
         }
 
         private void FactoryMethodPlan()
